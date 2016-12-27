@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # This is a python script to read the output.log and use Blender API to give the data to Blender
 
-import os, sys, time, re
+import os, sys, time, re, bpy.data
 
 file = open('output.log', 'r')
 while True:
@@ -29,7 +29,11 @@ while True:
         rot1 = float(t2[3])
         rot2 = float(t2[4])
         rot3 = float(t2[5])
-        rot4 = float(t2[6]);
-        
-    
-    
+        rot4 = float(t2[6])
+        bpy.data.meshes["sens'"+sensor+":x"] = x
+        bpy.data.meshes["sens'"+sensor+":y"] = y
+        bpy.data.meshes["sens'"+sensor+":z"] = z
+        bpy.data.meshes["sens'"+sensor+":rot1"] = rot1
+        bpy.data.meshes["sens'"+sensor+":rot2"] = rot2
+        bpy.data.meshes["sens'"+sensor+":rot3"] = rot3
+        bpy.data.meshes["sens'"+sensor+":rot4"] = rot4;
