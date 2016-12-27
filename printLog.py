@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # This is a python script to execute the powershell script
 
-import subprocess
-import os
-import sys
+import subprocess, os, sys
 
-subprocess.call(["C:\\Program Files\\Blender Foundation\\Blender\\2.78\\scripts\\startup\\output.cmd"])
+subprocess.call(["C:\\Users\\chaksummei\\Desktop\\Blender\\output.cmd"])
