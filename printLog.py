@@ -5,4 +5,4 @@ import subprocess
 import os
 import sys
 
-subprocess.call(["C:\\Users\\chaksummei\\Desktop\\bin\\output.cmd"])
+subprocess.call(["C:\\Program Files\\Blender Foundation\\Blender\\2.78\\scripts\\startup\\output.cmd"])
